@@ -1,0 +1,51 @@
+.cas {
+    text-decoration-line: underline;
+    color: olive;
+    font-weight: normal;
+}
+.ratllat {
+    text-decoration: line-through;
+}
+.tecnic {
+    color: blue;
+    font-style: italic;
+    font-size: 120%;
+}
+.usuari {
+    color:darkred;
+}
+.titol {
+    color: red;
+    text-align: center;
+    font-size: 250%;
+}
+
+article{
+    display: inline-block;
+    
+}
+/*
+p:hover{
+    color: blue;
+    cursor: pointer;
+}
+#caixa:checked{
+    background-color: green;
+}
+p::first-line{
+    color:lime;
+}
+p::first-letter{
+    color:red;
+    font-size: 2em;
+}
+*/
+/*
+p:nth-of-type(2)::first-letter{ /*primera letras dentro del segundo parrafo*/
+    color:brown;
+}
+
+section:hover p:nth-of-type(2)::first-letter{ /*primera letras dentro del segundo parrafo*/
+    color:aquamarine;
+}
+

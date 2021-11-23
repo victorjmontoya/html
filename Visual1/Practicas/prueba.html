@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+</head>
+<body>
+    <h1>Formulario variado</h1>
+    <form action="#" method="GET">
+        <label for="usuario">Usuario</label>
+        <input type="text" name="usuario" id="usuario" maxlength="30" autofocus="autofocus" ><br><br>
+
+        <label for="mail">Correo Electrónico</label>
+        <input type="email" name="mail" id="mail"><br><br>
+        
+        <label for="contraseña">Password</label>
+        <input type="password" name="contraseña" id="contraseña" size="4" maxlength="4" >
+        <label for="web">Añade tu página web:</label>
+        <input type="url" name="web" id="web"><br><br>
+
+        <label for="fecha">Fecha</label>
+        <input type="date" name="fecha" id="fecha"><br><br>
+
+        <label for="telefono">Telefono</label>
+        <input type="tel" name="telefono" id="telefono" size="9" maxlength="9" placeholder="----------" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required ><br><br>
+        
+        Tipo de teléfono:
+        <input type="radio" name="tipo" id="movil" value="Movil">
+        <label for="movil">Movil</label>
+        <input type="radio" name="tipo" id="fijo" value="Fijo" checked="checked">
+        <label for="movil">Fijo</label>
+        <br><br>
+
+        <label for="operador">Operador:</label>
+        <select name="operador" id="operador">
+            <option value="operador">Cableworld</option>
+            <option value="operador">Vodafone</option>
+            <option value="operador">Movistar</option>
+            <option value="operador">Finetwork</option>
+        </select>
+        <br><br>
+
+        <label for="buscar">Buscar</label>
+        <input type="search" name="buscar" id="buscar">
+        <input type="submit" value="Buscar">
+        <br><br>
+
+        <label for="comentarios">Comentarios: </label>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+        <br><br>
+
+        <input type="checkbox" name="newsletter" id="newsletter" checked="checked" >
+        <label for="newsletter">Acepto suscripcion a newsletter</label>
+        <br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar"> <br><br>
+        
+    </form>
+</body>
+</html>

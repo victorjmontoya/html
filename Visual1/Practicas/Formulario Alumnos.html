@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    
+    <h1> <img src="https://aules.edu.gva.es/fp/pluginfile.php/2204933/mod_page/content/7/check.png?time=1635864402989" alt="Logo"> 
+        Formulari d'alumnes
+    </h1>
+    <form action="https://www.sumcrevillent.com/formulari.php" method="post">
+        <fieldset><legend><strong>Dades Academics</strong></legend>
+            <table>
+                <tr>
+                    <td><label for="institut">(*) Institut: </label></td>
+                    <td><input type="text" name="institut" id="institut" required="required" autofocus="autofocus"></td>
+                </tr>
+                <tr>
+                    <td><label for="curso">(*) Curs: </label></td>
+                    <td><select name="curs" id="curso" required="required">
+                            <option value="1SMR">1SMR</option>
+                            <option value="2SMR">2SMR</option>
+                            <option value="1DAM">1DAM</option>
+                            <option value="2DAM">2DAM</option>
+                            <option value="1DAW">1DAW</option>
+                            <option value="2DAW">2DAW</option>
+                            <option value="1ASIR">1ASIR</option>
+                            <option value="2ASIR">2ASIR</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+            <fieldset><legend><strong>Dades Personals</strong></legend>
+                <table>
+                <tr>
+                    <td><label for="nom">(*) Nom: </label></td>
+                    <td><input type="text" name="nom" id="nom" required="required"></td> 
+                </tr>
+                <tr>
+                    <td><label for="cognoms">(*) Cognoms: </label></td>
+                    <td><input type="text" name="cognoms" id="cognoms" required="required"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">(*) Email: </label></td>
+                    <td><input type="email" name="email" id="email" required="required"></td>
+                </tr>
+                <tr>
+                    <td><label for="data">(*) Data de naiximent: </label></td>
+                    <td><input type="date" name="data" id="data" required="required"></td>
+                </tr>
+                <tr>
+                    <td><label for="codipostal">(*) Codi Postal: </label></td>
+                    <td><input type="number" min="01000" max="50999" name="codipostal" id="codipostal" required="required"></td>
+                </tr>
+                <tr>
+                    <td><label for="ciutat">(*) Ciutat: </label></td>
+                    <td><input type="text" name="ciutat" id="ciutat" required="required"></td>
+                </tr>
+                <tr>
+                    <td><label for="provincia">(*) Provincia: </label></td>
+                    <td><select name="provincia" id="provincia"required="required">
+                            <option value="Alicante">Alicante/Alacant</option>
+                            <option value="Valencia">Valencia/València</option>
+                            <option value="Castellon">Castellón/Castellò</option>
+                            <option value="Murcia">Murcia</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="telefon">Telèfon: </label></td>
+                    <td><input type="tel" name="telefon" id="telefon" ></td>
+                </tr>
+                </table>
+        </fieldset>
+        <br>
+        <fieldset><legend><strong>Web personal</strong></legend>
+            <table>
+            <tr>
+                <td><label for="contingut">Contingut: </label></td>
+                <td><textarea name="contingut" id="contingut" cols="60" rows="5"></textarea></td> 
+            </tr>
+            <tr>
+                <td><label for="colorFons">Color de fons: </label></td>
+                <td><input type="color" name="colorFons" id="colorFons" value="#FFFFFF"></td>
+            </tr>
+            </table>
+                <td>Color del text:</td>
+                <td>
+                    <input type="radio" name="colorText" id="negre" value="Negre" checked="checked">
+                    <label for="negre">Negre</label>
+                    <input type="radio" name="colorText" id="blanc" value="Blanc">
+                    <label for="blanc">Blanc</label>
+                </td>
+         </fieldset>
+         <br>
+         <input type="submit" value="Enviar">
+         <input type="reset" value="Esborrar"> <br><br>
+    </form>
+</body>
+</html>
